@@ -93,8 +93,8 @@
              android:layout_marginEnd="28dp"
              android:layout_marginBottom="79dp"
              android:clickable="true"
-             android:src="@drawable/ic_baseline_local_hospital_24"
-             android:focusable="true" />
+             android:focusable="true"
+             android:src="@drawable/ic_baseline_local_hospital_24" />
 
      </RelativeLayout>
 

@@ -18,7 +18,7 @@
             android:id="@+id/itemSelected"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fff"
+            android:background="#9590BEEF"
             android:elevation="8dp"
             android:padding="5dp">
 

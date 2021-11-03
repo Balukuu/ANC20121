@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fitsSystemWindows="true"
-    android:background="#eee">
+    android:background="#EEEEEE">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/items"
@@ -19,7 +19,7 @@
             android:id="@+id/itemSelected"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fff"
+            android:background="#8B39B9CA"
             android:elevation="8dp"
             android:padding="5dp">
 

@@ -1,9 +1,13 @@
 package com.example.antenatalcareapp;
 
+import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -23,6 +27,7 @@ import com.example.antenatalcareapp.Adapters.DoctorsAdapter;
 import com.example.antenatalcareapp.Models.DoctorsModel;
 import com.example.antenatalcareapp.Mother.MedicalPersonals;
 import com.example.antenatalcareapp.Mother.MyAppointments;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -42,6 +47,7 @@ public class FavouritesFragment extends Fragment {
     String getId,contact;
     SessionManager sessionManager;
     TextView error;
+    FloatingActionButton call;
 
     public FavouritesFragment() {
         // Required empty public constructor
@@ -76,6 +82,21 @@ public class FavouritesFragment extends Fragment {
         recyclerView = (RecyclerView) view.findViewById(R.id.recylcerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        call = (FloatingActionButton) view.findViewById(R.id.floatingActionButton2);
+        call.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                Toast.makeText(getActivity(), "call", Toast.LENGTH_SHORT).show();
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse("tel:+256780730001"));
+
+                if (ActivityCompat.checkSelfPermission(getActivity(),
+                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+                startActivity(callIntent);
+            }
+        });
 
         //initializing the ReportList
         mData = new ArrayList<>();
