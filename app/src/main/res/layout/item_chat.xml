@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp">
+
+    <RelativeLayout
+        android:id="@+id/card_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/receiver_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/embryo"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/default_color" />
+
+        <RelativeLayout
+            android:id="@+id/card_receiverss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_toEndOf="@id/receiver_image"
+            android:layout_toRightOf="@id/receiver_image"
+            android:background="@drawable/sender"
+            android:padding="1dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/receiver_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vvr"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fitsSystemWindows="true"
+                android:focusable="true"
+                android:padding="5dp"
+                android:text="Message from receiver"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/receiver_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:text="User"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/vvr"
+                android:layout_width="180dp"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/receiver_no"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/receiver_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/receiver_message"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:fitsSystemWindows="true"
+                android:focusable="true"
+                android:padding="4dp"
+                android:text="time:"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/reciever_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="phone"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/card_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_receiver">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sender_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/fetus"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/grey_200" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_toStartOf="@id/sender_image"
+            android:layout_toLeftOf="@id/sender_image"
+            android:background="@drawable/receiver3"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/sender_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vvr1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fitsSystemWindows="true"
+                android:focusable="true"
+                android:padding="5dp"
+                android:text="Message from receiver"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/sender_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="User"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/vvr1"
+                android:layout_width="170dp"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/sender_no"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/sender_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sender_message"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:fitsSystemWindows="true"
+                android:focusable="true"
+                android:padding="4dp"
+                android:text="time"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fsession_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sender_time"
+                android:text="phone"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/freciever_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fsession_no"
+                android:text="phone"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/session_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="phone"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--        </androidx.cardview.widget.CardView>-->
+
+</RelativeLayout>

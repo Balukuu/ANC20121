@@ -1,0 +1,278 @@
+<resources>
+    <string name="app_name">Antenatal Care App</string>
+    <string name="head_info">Antenatal care (ANC) is a means to identify high-risk pregnancies and educate women so that they might experience a healthier delivery and outcome</string>
+    <string name="about_us">Antenatal care app helps mothers trac all their scheduled checkups in real time plus text messages</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="email_or_phone">Email or Phone</string>
+    <string-array name="travelreasons">
+        <item>select account</item>
+        <item>Medical Personnel</item>
+        <item>Mother</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item> Choose your gender </item>
+        <item>female</item>
+    </string-array>
+    <string-array name="m_status">
+        <item> Choose Marital Status </item>
+        <item>Single</item>
+        <item>Married</item>
+        <item>Divorced</item>
+        <item>Separated</item>
+        <item>Cohabiting</item>
+    </string-array>
+
+    <string-array name="districts">
+        <item>choose district</item>
+        <item>Abim</item>
+        <item>Adjumani</item>
+        <item>Agago</item>
+        <item>Alebtong</item>
+        <item>Amolatar</item>
+        <item>Amudat</item>
+        <item>Amuria</item>
+        <item>Amuru</item>
+        <item> Apac</item>
+        <item> Arua</item>
+        <item> Budaka</item>
+        <item> Bududa</item>
+        <item> Bugiri</item>
+        <item> Buhweju</item>
+        <item> Bukedea</item>
+        <item> Bukomansimbi</item>
+        <item> Bukwa</item>
+        <item> Bulambuli</item>
+        <item>Buliisa</item>
+        <item>Bundibugyo</item>
+        <item> Bushenyi</item>
+        <item>Busia</item>
+        <item> Butaleja</item>
+        <item> Butambala</item>
+        <item> Buvuma</item>
+        <item> Buyende</item>
+        <item> Dokolo</item>
+        <item> Gomba</item>
+        <item> Gulu</item>
+        <item> Hoima</item>
+        <item> Ibanda</item>
+        <item> Iganga</item>
+        <item> Isingiro</item>
+        <item>Jinja</item>
+        <item> Kaabong</item>
+        <item> Kabale</item>
+        <item> Kabarole</item>
+        <item>Kaberamaido</item>
+        <item>Kalangala</item>
+        <item> Kaliro</item>
+        <item>Kalungu</item>
+        <item> Kampala</item>
+        <item> Kamuli</item>
+        <item> Kamwenge</item>
+        <item> Kanungu</item>
+        <item> Kapchorwa</item>
+        <item> Kasese</item>
+        <item> Katakwi</item>
+        <item> Kayunga</item>
+        <item> Kibaale</item>
+        <item> Kiboga</item>
+        <item>Kibuku</item>
+        <item> Kiruhura</item>
+        <item>Kiryandongo</item>
+        <item> Kisoro</item>
+        <item> Kitgum</item>
+        <item> Koboko</item>
+        <item> Kole</item>
+        <item> Kotido</item>
+        <item> Kumi</item>
+        <item> Kween</item>
+        <item> Kyankwanzi</item>
+        <item> Kyegegwa</item>
+        <item> Kyenjojo</item>
+        <item>Lamwo</item>
+        <item> Lira</item>
+        <item> Luuka</item>
+        <item> Luweero</item>
+        <item> Lwengo</item>
+        <item> Lyantonde</item>
+        <item> Manafwa</item>
+        <item> Maracha</item>
+        <item> Masaka</item>
+        <item> Masindi</item>
+        <item> Mayuge</item>
+        <item> Mbale</item>
+        <item> Mbarara</item>
+        <item> Mitooma</item>
+        <item> Mityana</item>
+        <item> Moroto</item>
+        <item> Moyo</item>
+        <item> Mpigi</item>
+        <item> Mubende</item>
+        <item>Mukono</item>
+        <item> Nakapiripirit</item>
+        <item> Nakaseke</item>
+        <item> Nakasongola</item>
+        <item> Namayingo</item>
+        <item> Namutumba</item>
+        <item> Napak</item>
+        <item> Nebbi</item>
+        <item> Ngora</item>
+        <item> Ntoroko</item>
+        <item> Ntungamo</item>
+        <item>Nwoya</item>
+        <item> Otuke</item>
+        <item>Oyam</item>
+        <item>Pader</item>
+        <item>Pallisa</item>
+        <item>Rakai</item>
+        <item>Rubirizi</item>
+        <item>Rukungiri</item>
+        <item>Sembabule</item>
+        <item>Serere</item>
+        <item>Sheema</item>
+        <item>Sironko</item>
+        <item>Soroti</item>
+        <item>Tororo</item>
+        <item>Wakiso</item>
+        <item>Yumbe</item>
+        <item>Zombo</item>
+    </string-array>
+    <string-array name="regions">
+        <item>Select your region</item>
+        <item>Northern</item>
+        <item>Eastern</item>
+        <item>Central</item>
+        <item>Western</item>
+
+    </string-array>
+    <string-array name="western">
+        <item>Select your district</item>
+        <item>Buhweju</item>
+        <item>Buliisa</item>
+        <item>Bundibugyo</item>
+        <item>Bushenyi</item>
+        <item>Hoima</item>
+        <item>Ibanda</item>
+        <item>Isingiro</item>
+        <item>Kabale</item>
+        <item>Kabarole</item>
+        <item>Kamwenge</item>
+        <item>Kanungu</item>
+        <item>Kasese</item>
+        <item>Kibaale</item>
+        <item>Kiruhura</item>
+        <item>Kiryandongo</item>
+        <item>Kisoro</item>
+        <item>Kyegegwa</item>
+        <item>Kyenjojo</item>
+        <item>Masindi</item>
+        <item>Mbarara</item>
+        <item>Mitooma</item>
+        <item>Ntoroko</item>
+        <item>Ntungamo</item>
+        <item>Rubirizi</item>
+        <item>Rukungiri</item>
+        <item>Sheema</item>
+    </string-array>
+
+    <string-array name="eastern">
+        <item>Select your district</item>
+        <item>Amuria</item>
+        <item>Budaka</item>
+        <item>Bududa</item>
+        <item>Bugiri</item>
+        <item>Bukedea</item>
+        <item>Bukwa</item>
+        <item>Bulambuli</item>
+        <item>Busia</item>
+        <item>Butaleja</item>
+        <item>Buyende</item>
+        <item>Iganga</item>
+        <item>Jinja</item>
+        <item>Kaberamaido</item>
+        <item>Kaliro</item>
+        <item>Kamuli</item>
+        <item>Kapchorwa</item>
+        <item>Katakwi</item>
+        <item>Kibuku</item>
+        <item>Kumi</item>
+        <item>Kween</item>
+        <item>Luuka</item>
+        <item>Manafwa</item>
+        <item>Mayuge</item>
+        <item>Mbale</item>
+        <item>Namayingo</item>
+        <item>Namutumba</item>
+        <item>Ngora</item>
+        <item>Pallisa</item>
+        <item>Serere</item>
+        <item>Sironko</item>
+        <item>Soroti</item>
+        <item>Tororo</item>
+    </string-array>
+
+    <string-array name="northern">
+        <item>Select your district</item>
+        <item>Abim</item>
+        <item>Adjumani</item>
+        <item>Agago</item>
+        <item>Alebtong</item>
+        <item>Amolatar</item>
+        <item>Amudat</item>
+        <item>Amuru</item>
+        <item>Apac</item>
+        <item>Arua</item>
+        <item>Dokolo</item>
+        <item>Gulu</item>
+        <item>Kaabong</item>
+        <item>Kitgum</item>
+        <item>Koboko</item>
+        <item>Kole</item>
+        <item>Kotido</item>
+        <item>Lamwo</item>
+        <item>Lira</item>
+        <item>Maracha</item>
+        <item>Moroto</item>
+        <item>Moyo</item>
+        <item>Nakapiripirit</item>
+        <item>Napak</item>
+        <item>Nebbi</item>
+        <item>Nwoya</item>
+        <item>Otuke</item>
+        <item>Oyam</item>
+        <item>Pader</item>
+        <item>Yumbe</item>
+        <item>Zombo</item>
+    </string-array>
+
+    <string-array name="central">
+        <item>Select your district</item>
+        <item>Buikwe</item>
+        <item>Bukomansimbi</item>
+        <item>Butambala</item>
+        <item>Buvuma</item>
+        <item>Gomba</item>
+        <item>Kalangala</item>
+        <item>Kalungu</item>
+        <item>Kampala</item>
+        <item>Kayunga</item>
+        <item>Kiboga</item>
+        <item>Kyankwanzi</item>
+        <item>Luweero</item>
+        <item>Lwengo</item>
+        <item>Lyantonde</item>
+        <item>Masaka</item>
+        <item>Mityana</item>
+        <item>Mpigi</item>
+        <item>Mubende</item>
+        <item>Mukono</item>
+        <item>Nakaseke</item>
+        <item>Nakasongola</item>
+        <item>Rakai</item>
+        <item>Sembabule</item>
+        <item>Wakiso</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

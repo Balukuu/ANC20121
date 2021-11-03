@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mother.MyProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        tools:ignore="HardcodedText, UsingOnClickInXml ">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+            app:titleMarginStart="10dp"
+            app:titleTextColor="@color/colorWhite">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="goBack"
+                    android:src="@drawable/back_btn" />
+
+                <TextView
+                    android:id="@+id/mss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/back_btn"
+                    android:paddingBottom="5dp"
+                    android:text="My Account Profile"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="-2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:paddingTop="10dp"
+                android:fitsSystemWindows="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fitsSystemWindows="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/names"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_without_top"
+                        android:fitsSystemWindows="true"
+                        android:hint="Full names"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimaryDark" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Phone number"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/name_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/background_register_btn"
+                        app:ccp_autoDetectCountry="true" />
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@id/name_phone"
+                        android:layout_toRightOf="@id/name_phone"
+                        android:background="@drawable/border_without_top"
+                        android:enabled="true"
+                        android:hint="0780000000"
+                        android:importantForAutofill="no"
+                        android:inputType="phone" />
+
+
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fitsSystemWindows="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/religion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_without_top"
+                        android:fitsSystemWindows="true"
+                        android:hint="Religion"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimaryDark" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fitsSystemWindows="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/occupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_without_top"
+                        android:fitsSystemWindows="true"
+                        android:hint="Occupation"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimaryDark" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fitsSystemWindows="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/marital"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_without_top"
+                        android:fitsSystemWindows="true"
+                        android:hint="Marital Status"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimaryDark" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fitsSystemWindows="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_without_top"
+                        android:fitsSystemWindows="true"
+                        android:hint="Next of kin"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimaryDark" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:fitsSystemWindows="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_without_top"
+                        android:fitsSystemWindows="true"
+                        android:hint="Address"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimaryDark" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/reg_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/background_register_btn"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:fitsSystemWindows="true"
+                    android:focusable="true"
+                    android:onClick="UpdateProfile"
+                    android:text="Update Profile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    tools:targetApi="lollipop" />
+            </LinearLayout>
+        </ScrollView>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:progressBackgroundTint="@color/colorPrimaryDark"
+            android:visibility="gone"
+            tools:ignore="UnusedAttribute" />
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+    <!--</ScrollView>-->

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/Theme.AntenatalCareApp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+            app:titleMarginStart="20dp"
+            app:titleTextColor="@color/white">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/mss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/back_btn"
+                    android:paddingBottom="5dp"
+                    android:text="Health Tips List"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No data to display"
+            android:textColor="@color/red"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:textSize="18sp"/>
+
+        </ScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylcerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="1dp"
+            tools:layout_editor_absoluteX="745dp"
+            tools:layout_editor_absoluteY="-51dp" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

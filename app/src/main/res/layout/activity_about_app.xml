@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:fitsSystemWindows="true"
+    tools:context=".ABoutApp"
+    tools:ignore="HardcodedText, UsingOnClickInXml ">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+        app:titleMarginStart="10dp"
+        app:titleTextColor="@color/colorWhite">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:paddingBottom="0dp">
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="goBack"
+                android:src="@drawable/back_btn" />
+
+            <TextView
+                android:id="@+id/mss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/menu_icon"
+                android:layout_toRightOf="@+id/menu_icon"
+                android:text="About app"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="-2dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:fitsSystemWindows="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewss"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="app logo"
+                android:fitsSystemWindows="true"
+                app:srcCompat="@drawable/fetus"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:selectAllOnFocus="false"
+                android:text="@string/about_us"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:progressBackgroundTint="@color/colorPrimaryDark"
+        android:visibility="gone"
+        tools:ignore="UnusedAttribute" />
+</RelativeLayout>
+
+
+    <!--</ScrollView>-->

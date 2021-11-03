@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="#eee">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginBottom="5dp">
+
+
+        <RelativeLayout
+            android:id="@+id/itemSelected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0AC5DD"
+            android:elevation="8dp"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/t_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="1dp"
+                android:text="About the health tip "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/t_holder"
+                android:text="Lorem Ipsum Dolor Amet"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/sep"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/title"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/d_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sep"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="1dp"
+                android:text="Details "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/d_holder"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:text="Lorem Ipsum Dolor Amet"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    </ScrollView>
+</LinearLayout>

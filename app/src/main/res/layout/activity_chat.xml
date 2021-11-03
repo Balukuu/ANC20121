@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_color"
+    tools:context=".Chat"
+    tools:ignore="HardcodedText">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+        app:titleMarginStart="20dp"
+        app:titleTextColor="@color/colorWhite">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="img"
+                android:padding="5dp"
+                android:src="@drawable/back_btn" />
+
+            <TextView
+                android:id="@+id/mss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@id/back_btn"
+                android:layout_toRightOf="@id/back_btn"
+                android:text="Chat with Mothers"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:text="You"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/mother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:text="Worker"
+        android:visibility="gone"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/mother_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:text="farmer_phone"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:outlineSpotShadowColor="@color/black"
+        android:visibility="invisible">
+
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Loading messages..."
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/no_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Chat is Empty"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/message"
+        android:layout_below="@id/you"
+        android:paddingLeft="2dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingRight="2dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+
+    <LinearLayout
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/messageArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Write a message..."
+            android:maxHeight="100dp"
+            android:textColor="#CFD8DC"
+            android:textColorHint="#CFD8DC" />
+
+        <ImageView
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:padding="4dp"
+            android:src="@android:drawable/ic_menu_send" />
+    </LinearLayout>
+</RelativeLayout>

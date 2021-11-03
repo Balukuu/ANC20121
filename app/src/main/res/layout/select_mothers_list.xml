@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress ALL -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp">
+
+
+        <RelativeLayout
+            android:id="@+id/itemSelected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:elevation="8dp"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/m_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Names: "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/m_holder"
+                android:text="Lorem Ipsum Dolor Amet"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/c_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Contact: "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/c_holder"
+                android:text="Lorem Ipsum Dolor Amet"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/age_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact"
+                android:layout_marginLeft="15dp"
+                android:text="Age: "
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:layout_toRightOf="@id/age_holder"
+                android:text="Lorem Ipsum Dolor Amet"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nin_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/age"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:text="Status: "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/age"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:layout_toRightOf="@id/nin_holder"
+                android:text="Lorem Ipsum Dolor Amet"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/d_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nin"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:text="Address: "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nin"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:layout_toRightOf="@id/d_holder"
+                android:text="Lorem Ipsum Dolor Amet"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/s_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/district"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Next of kin: "
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subcounty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/district"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:layout_toRightOf="@id/s_holder"
+                android:text="Lorem Ipsum Dolor Amet"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subcounty"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:text="NOK Address: "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/parish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subcounty"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/p_holder"
+                android:text="Lorem Ipsum Dolor Amet"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/v_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/parish"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Occupation: "
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/village"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/parish"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:layout_toRightOf="@id/v_holder"
+                android:text="Lorem Ipsum Dolor Amet"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@id/v_holder"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Create appointment"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2037037037037037" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/back_btn.xml" value="0.19166666666666668" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/background_register_btn.xml" value="0.1638888888888889" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/circle.xml" value="0.2037037037037037" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/custom_input.xml" value="0.2037037037037037" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/ic_baseline_power_settings_new_24.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/ic_date.xml" value="0.2037037037037037" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/ic_email.xml" value="0.2037037037037037" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/ic_home.xml" value="0.2037037037037037" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/ic_image.xml" value="0.2037037037037037" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2037037037037037" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/ic_lock.xml" value="0.2037037037037037" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/ic_people.xml" value="0.2037037037037037" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/ic_phone.xml" value="0.2037037037037037" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/ic_search.xml" value="0.2037037037037037" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/receiver3.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/rectangle.xml" value="0.2037037037037037" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/sender2.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/drawable/shape.xml" value="0.2037037037037037" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_about_app.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_add_healthy_tips.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_add_mother.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_appointments_list.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_centers_list.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_chat.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_create_appointments.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_dashboard.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_doc_dashboard.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_health_centers.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_health_tips.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_login.xml" value="0.19583333333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_medical_personals.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_mother_chat_list.xml" value="0.15989583333333332" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_mother_dasboard.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_mother_login.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_mothers_list.xml" value="0.18" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_my_appointments.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_my_profile.xml" value="0.17" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_my_tips.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_register.xml" value="0.19583333333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_select_mother.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_sessiu.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_settings.xml" value="0.21" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_splash.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/activity_temp.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/appointment_list.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/centers_list.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/item_chat.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/mothers_list.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/select_doctors_list.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/select_mothers_list.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/simple_spinner_dropdown_item.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/simple_spinner_item.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/projects2021/AntenatalCareApp/app/src/main/res/layout/tips_list.xml" value="0.17395833333333333" />
+        <entry key="..\:/Projects/AntenatalCareApp/app/src/main/res/drawable/custom_input.xml" value="0.1" />
+        <entry key="..\:/Projects/AntenatalCareApp/app/src/main/res/drawable/rectangle.xml" value="0.1" />
+        <entry key="..\:/Projects/AntenatalCareApp/app/src/main/res/layout/activity_health_tips.xml" value="0.1" />
+        <entry key="..\:/Projects/AntenatalCareApp/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Projects/AntenatalCareApp/app/src/main/res/layout/activity_medical_personals.xml" value="0.10989583333333333" />
+        <entry key="..\:/Projects/AntenatalCareApp/app/src/main/res/layout/activity_mother_chat_list.xml" value="0.1" />
+        <entry key="..\:/Projects/AntenatalCareApp/app/src/main/res/layout/activity_mother_login.xml" value="0.1" />
+        <entry key="..\:/Projects/AntenatalCareApp/app/src/main/res/layout/activity_mothers_list.xml" value="0.10989583333333333" />
+        <entry key="..\:/Projects/AntenatalCareApp/app/src/main/res/layout/activity_my_tips.xml" value="0.10989583333333333" />
+        <entry key="..\:/Projects/AntenatalCareApp/app/src/main/res/layout/activity_select_mother.xml" value="0.10989583333333333" />
+        <entry key="..\:/Projects/AntenatalCareApp/app/src/main/res/layout/activity_splash.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/drawable/custom_input.xml" value="0.1" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.1" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/drawable/receiver.xml" value="0.1" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_add_healthy_tips.xml" value="0.67" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_add_mother.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_appointments_list.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_centers_list.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_chat.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_create_appointments.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_dashboard.xml" value="0.11018518518518519" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_doc_dashboard.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_health_centers.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_health_tips.xml" value="0.11018518518518519" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_login.xml" value="0.15" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_main2.xml" value="0.33" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_main3.xml" value="0.22" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_medical_personals.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_mother_chat_list.xml" value="0.25" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_mother_dasboard.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_mother_login.xml" value="0.5" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_mothers_list.xml" value="0.11018518518518519" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_my_appointments.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_my_tips.xml" value="0.22" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_register.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_select_mother.xml" value="0.11018518518518519" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_settings.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_temp.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/fragment_appointments.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/fragment_doc_main_view.xml" value="0.33" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/fragment_favourites.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/fragment_mother_chat.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/fragment_profile.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/fragment_search.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/item_chat.xml" value="0.33" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/select_doctors_list.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/select_mothers_list.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/tips_list.xml" value="0.1" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/menu/bottom_nav_menu2.xml" value="0.22447916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

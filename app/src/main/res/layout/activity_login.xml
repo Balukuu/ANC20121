@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bg_shape"
+        android:layout_width="311dp"
+        android:layout_height="461dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="230dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="17dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:minHeight="48dp"
+            android:onClick="openMotherLogin"
+            android:padding="10dp"
+            android:text="Want to sign is as a mother?Click"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.629"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="264dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/email_or_phone"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="264dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/enter_your_password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="#38C008"
+            app:layout_constraintEnd_toEndOf="@+id/username"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/username"
+            app:layout_constraintTop_toBottomOf="@+id/username" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rectangle"
+            android:text="Log In"
+            android:textColor="#F8EBEB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Log In"
+            android:textColor="#03A9F4"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

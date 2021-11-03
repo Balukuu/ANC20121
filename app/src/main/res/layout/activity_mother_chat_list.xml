@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AntenatalCareApp"
+    tools:context=".Doctor.MotherChatList">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+        app:titleMarginStart="20dp"
+        app:titleTextColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:onClick="goBack"
+                android:src="@drawable/back_btn" />
+
+            <TextView
+                android:id="@+id/mss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/back_btn"
+                android:paddingBottom="5dp"
+                android:text="Mothers List"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/list_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginEnd="15dp"
+                android:onClick="ShowList"
+                android:src="@drawable/ic_baseline_format_list_bulleted_24" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:hint="Search Mothers"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No data to display"
+        android:textColor="@color/red"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textSize="18sp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylcerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_layout"
+        android:layout_marginTop="1dp"
+        tools:layout_editor_absoluteX="745dp"
+        tools:layout_editor_absoluteY="-51dp" />
+
+</RelativeLayout>
