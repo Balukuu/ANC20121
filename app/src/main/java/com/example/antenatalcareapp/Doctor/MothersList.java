@@ -12,6 +12,7 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -46,6 +47,7 @@ public class MothersList extends AppCompatActivity {
     TextView error;
     EditText editText;
     MothersAdapter adapter;
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +66,12 @@ public class MothersList extends AppCompatActivity {
 
         mData = new ArrayList<>();
         adapter = new MothersAdapter(MothersList.this, mData);
+
         loadMothers();
+
+        //button = findViewById(R.id.date2);
+        //button.setOnClickListener(v -> startActivity(new Intent(MothersList.this, CreateAppointments.class)));
+        //button.setOnClickListener(v -> Toast.makeText(Docor.MothersList.this, "clicked", Toast.LENGTH_SHORT).show());
 
         editText = findViewById(R.id.search);
         editText.setOnClickListener(v -> {

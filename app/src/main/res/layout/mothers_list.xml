@@ -18,9 +18,25 @@
             android:id="@+id/itemSelected"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fff"
+            android:background="#855CE0F1"
             android:elevation="8dp"
             android:padding="5dp">
+
+            <Button
+                android:id="@+id/date2"
+                android:layout_width="387dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_holder"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Create appointment"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/delete"
@@ -33,6 +49,7 @@
                 android:text="X"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
+
 
             <TextView
                 android:id="@+id/m_holder"
@@ -49,7 +66,7 @@
                 android:id="@+id/mother"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="60dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="10dp"
@@ -58,12 +75,14 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+
             <TextView
                 android:id="@+id/c_holder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/mother"
+                android:layout_below="@+id/m_holder"
                 android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
                 android:layout_marginBottom="10dp"
                 android:text="Contact: "
                 android:textSize="16sp"
@@ -74,12 +93,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/mother"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginBottom="10dp"
                 android:layout_toRightOf="@id/c_holder"
                 android:text="Lorem Ipsum Dolor Amet"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
 
             <TextView
                 android:id="@+id/age_holder"
@@ -97,7 +118,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/contact"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_toRightOf="@id/age_holder"
                 android:text="Lorem Ipsum Dolor Amet"
@@ -120,7 +142,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/age"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="65dp"
                 android:layout_marginBottom="10dp"
                 android:layout_toRightOf="@id/nin_holder"
                 android:text="Lorem Ipsum Dolor Amet"
@@ -143,7 +165,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/nin"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="55dp"
                 android:layout_marginBottom="10dp"
                 android:layout_toRightOf="@id/d_holder"
                 android:text="Lorem Ipsum Dolor Amet"
@@ -166,7 +188,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/district"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="40dp"
                 android:layout_marginBottom="10dp"
                 android:layout_toRightOf="@id/s_holder"
                 android:text="Lorem Ipsum Dolor Amet"
@@ -189,7 +211,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/subcounty"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginBottom="10dp"
                 android:layout_toRightOf="@id/p_holder"
                 android:text="Lorem Ipsum Dolor Amet"
@@ -212,7 +234,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/parish"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="35dp"
                 android:layout_marginBottom="10dp"
                 android:layout_toRightOf="@id/v_holder"
                 android:text="Lorem Ipsum Dolor Amet"
@@ -221,11 +243,12 @@
 
             <TextView
                 android:id="@+id/date"
-                android:layout_width="wrap_content"
+                android:layout_width="267dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/v_holder"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="15dp"
+                android:layout_marginTop="-15dp"
+                android:layout_marginRight="13dp"
                 android:padding="10dp"
                 android:text="date"
                 android:textColor="@color/red" />

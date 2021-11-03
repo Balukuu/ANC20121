@@ -63,8 +63,8 @@ public class CreateAppointments extends AppCompatActivity {
         phone = findViewById(R.id.phone);
 
         id = getIntent().getStringExtra("id");
-        names.setText(getIntent().getStringExtra("names"));
-        phone.setText(getIntent().getStringExtra("phone"));
+        names.setText(getIntent().getStringExtra("Mother_Name"));
+        phone.setText(getIntent().getStringExtra("Phone_Number"));
 
         date.setOnClickListener(view -> {
 

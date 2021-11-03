@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent;
         if (role!= null && role.equals("doctor")) {
-            intent = new Intent(getApplicationContext(), DocDashboard.class);
+            intent = new Intent(getApplicationContext(), MainActivity3.class);
         }
         else{
-            intent = new Intent(getApplicationContext(), MotherDashboard.class);
+            intent = new Intent(getApplicationContext(), MainActivity2 .class);
         }
         startActivity(intent);
         finish();

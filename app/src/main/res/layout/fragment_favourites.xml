@@ -41,7 +41,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_toRightOf="@+id/back_btn"
                     android:paddingBottom="5dp"
-                    android:text="Chat with Medical Personel"
+                    android:text="Medical Personel"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 

@@ -74,7 +74,7 @@ public class SelectMotherAdapter extends RecyclerView.Adapter<SelectMotherAdapte
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view;
-        view = LayoutInflater.from(context).inflate(R.layout.select_mothers_list, null, false);
+        view = LayoutInflater.from(context).inflate(R.layout.mothers_list, null, false);
         return new ViewHolder(view);
     }
 

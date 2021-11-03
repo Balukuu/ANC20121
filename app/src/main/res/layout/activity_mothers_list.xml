@@ -83,13 +83,12 @@
         android:textSize="18sp"/>
 
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recylcerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="1dp"
         android:layout_below="@id/search_layout"
+        android:layout_marginTop="1dp"
         tools:layout_editor_absoluteX="745dp"
         tools:layout_editor_absoluteY="-51dp" />
 

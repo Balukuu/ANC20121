@@ -80,6 +80,8 @@ public class Appointments extends Fragment {
         HashMap<String, String> user = sessionManager.getUserDetail();
         getId = user.get(SessionManager.ID);
         contact = user.get(SessionManager.CONTACT);
+        button = view.findViewById(R.id.floatingActionButton);
+        button.setOnClickListener(v -> startActivity(new Intent(getActivity(), CreateAppointments.class)));
 
         //handle recyclerview
         recyclerView = view.findViewById(R.id.recylcerView);
