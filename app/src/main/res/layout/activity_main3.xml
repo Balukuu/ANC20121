@@ -2,8 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity3">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -33,5 +35,35 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:navGraph="@navigation/nav_graph2" />
+
+    <ImageView
+        android:id="@+id/home_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:onClick="LogOut"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_power_settings_new_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/names4"
+        android:layout_width="87dp"
+        android:layout_height="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:text="Doctor"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/home_btn2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,7 +18,7 @@
             android:id="@+id/itemSelected"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fff"
+            android:background="@drawable/card"
             android:elevation="8dp"
             android:padding="5dp">
 
@@ -45,7 +45,7 @@
                 android:layout_toRightOf="@id/m_holder"
                 android:text="Lorem Ipsum Dolor Amet"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
 
             <TextView
                 android:id="@+id/c_holder"
@@ -68,7 +68,7 @@
                 android:layout_toRightOf="@id/c_holder"
                 android:text="Lorem Ipsum Dolor Amet"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
             <TextView
                 android:id="@+id/age_holder"
                 android:layout_width="wrap_content"

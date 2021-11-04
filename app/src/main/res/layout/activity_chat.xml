@@ -34,18 +34,19 @@
                 android:layout_centerVertical="true"
                 android:contentDescription="img"
                 android:padding="5dp"
-                android:src="@drawable/back_btn" />
+                android:src="@drawable/mess" />
 
             <TextView
                 android:id="@+id/mss"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="14dp"
                 android:layout_toEndOf="@id/back_btn"
                 android:layout_toRightOf="@id/back_btn"
-                android:text="Chat with Mothers"
+                android:text="Chat"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 

@@ -19,7 +19,7 @@
             android:id="@+id/itemSelected"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#8B39B9CA"
+            android:background="@drawable/card"
             android:elevation="8dp"
             android:padding="5dp">
 

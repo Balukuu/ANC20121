@@ -23,7 +23,7 @@
             android:id="@+id/itemSelected"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#0AC5DD"
+            android:background="@drawable/card"
             android:elevation="8dp"
             android:padding="5dp">
 
@@ -37,19 +37,19 @@
                 android:layout_marginBottom="1dp"
                 android:text="About the health tip "
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
 
             <TextView
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/t_holder"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="10dp"
-                android:textColor="@color/black"
-                android:layout_below="@+id/t_holder"
                 android:text="Lorem Ipsum Dolor Amet"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -73,7 +73,7 @@
                 android:layout_marginBottom="1dp"
                 android:text="Details "
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
 
             <TextView
                 android:id="@+id/details"
@@ -81,11 +81,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/d_holder"
                 android:layout_marginLeft="15dp"
-                android:textColor="@color/black"
                 android:layout_marginBottom="10dp"
                 android:text="Lorem Ipsum Dolor Amet"
+                android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
 
         </RelativeLayout>
 

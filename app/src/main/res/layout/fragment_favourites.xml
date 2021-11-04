@@ -77,9 +77,9 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="39dp"
             android:layout_marginBottom="81dp"
-            android:background="@color/white"
+            android:background="@drawable/card"
             android:clickable="true"
-            android:src="@drawable/vector" />
+            android:src="@drawable/ic_baseline_phone_in_talk_24" />
 
     </RelativeLayout>
 

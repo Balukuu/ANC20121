@@ -23,6 +23,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.antenatalcareapp.Adapters.AppointmentsAdapter;
+import com.example.antenatalcareapp.Doctor.AddHealthyTips;
 import com.example.antenatalcareapp.Doctor.AppointmentsList;
 import com.example.antenatalcareapp.Doctor.CreateAppointments;
 import com.example.antenatalcareapp.Models.AppointmentsModel;
@@ -81,7 +82,7 @@ public class Appointments extends Fragment {
         getId = user.get(SessionManager.ID);
         contact = user.get(SessionManager.CONTACT);
         button = view.findViewById(R.id.floatingActionButton);
-        button.setOnClickListener(v -> startActivity(new Intent(getActivity(), CreateAppointments.class)));
+        button.setOnClickListener(v -> startActivity(new Intent(getActivity(), AddHealthyTips.class)));
 
         //handle recyclerview
         recyclerView = view.findViewById(R.id.recylcerView);

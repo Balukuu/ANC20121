@@ -18,7 +18,7 @@
             android:id="@+id/itemSelected"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#855CE0F1"
+            android:background="@drawable/card"
             android:elevation="8dp"
             android:padding="5dp">
 
@@ -44,7 +44,7 @@
                 android:layout_height="35dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="10dp"
-                android:background="@color/red"
+                android:background="@drawable/background_login_btn"
                 android:backgroundTint="@color/red"
                 android:text="X"
                 android:textAllCaps="false"
@@ -73,7 +73,7 @@
                 android:layout_toRightOf="@id/m_holder"
                 android:text="Lorem Ipsum Dolor Amet"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
 
 
             <TextView
@@ -99,7 +99,7 @@
                 android:layout_toRightOf="@id/c_holder"
                 android:text="Lorem Ipsum Dolor Amet"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
 
 
             <TextView
@@ -124,7 +124,7 @@
                 android:layout_toRightOf="@id/age_holder"
                 android:text="Lorem Ipsum Dolor Amet"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
 
             <TextView
                 android:id="@+id/nin_holder"
@@ -147,7 +147,7 @@
                 android:layout_toRightOf="@id/nin_holder"
                 android:text="Lorem Ipsum Dolor Amet"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
 
             <TextView
                 android:id="@+id/d_holder"
@@ -170,7 +170,7 @@
                 android:layout_toRightOf="@id/d_holder"
                 android:text="Lorem Ipsum Dolor Amet"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
 
             <TextView
                 android:id="@+id/s_holder"
@@ -193,7 +193,7 @@
                 android:layout_toRightOf="@id/s_holder"
                 android:text="Lorem Ipsum Dolor Amet"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
 
             <TextView
                 android:id="@+id/p_holder"
@@ -216,7 +216,7 @@
                 android:layout_toRightOf="@id/p_holder"
                 android:text="Lorem Ipsum Dolor Amet"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
 
             <TextView
                 android:id="@+id/v_holder"
@@ -239,7 +239,7 @@
                 android:layout_toRightOf="@id/v_holder"
                 android:text="Lorem Ipsum Dolor Amet"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
 
             <TextView
                 android:id="@+id/date"

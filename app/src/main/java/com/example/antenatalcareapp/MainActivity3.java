@@ -25,7 +25,7 @@ public class MainActivity3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
-        name =findViewById(R.id.names2);
+        name =findViewById(R.id.names4);
         sessionManager = new SessionManager(this);
         sessionManager.checkLogin();
 

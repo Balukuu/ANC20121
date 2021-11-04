@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:paddingLeft="1dp"
-    android:paddingRight="1dp">
+    android:background="#030304">
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
 
     <RelativeLayout
         android:id="@+id/card_receiver"
@@ -25,14 +25,14 @@
 
         <RelativeLayout
             android:id="@+id/card_receiverss"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="284dp"
+            android:layout_height="98dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="70dp"
             android:layout_marginRight="70dp"
             android:layout_toEndOf="@id/receiver_image"
             android:layout_toRightOf="@id/receiver_image"
-            android:background="@drawable/sender"
+            android:background="@drawable/rectangle"
             android:padding="1dp"
             android:visibility="visible">
 

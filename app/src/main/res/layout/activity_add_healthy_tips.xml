@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Doctor.AddHealthyTips"
+    android:background="@color/white"
     tools:ignore="HardcodedText">
 
     <androidx.appcompat.widget.Toolbar
@@ -38,19 +39,6 @@
                 android:textSize="18sp" />
 
             <ImageView
-                android:id="@+id/back_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="10dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:onClick="goBack"
-                android:padding="5dp"
-                android:src="@drawable/back_btn" />
-
-            <ImageView
                 android:id="@+id/list_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -73,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
         android:layout_margin="5dp"
-        android:background="@color/white"
+        android:background="@drawable/card"
         android:elevation="6dp">
 
         <ScrollView
@@ -103,7 +91,6 @@
                         android:id="@+id/u_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/border_without_top"
                         android:fitsSystemWindows="true"
                         android:hint="About the health tip"
                         android:inputType="text"
@@ -125,7 +112,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:layout_gravity="center_horizontal"
-                        android:background="@drawable/border_without_top"
                         android:fitsSystemWindows="true"
                         android:hint="Type Health tips details here.."
                         android:imeOptions="actionDone"
@@ -135,8 +121,8 @@
 
                 <Button
                     android:id="@+id/add_btn"
-                    android:layout_width="100dp"
-                    android:layout_height="35dp"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/update_body"
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center"
@@ -144,14 +130,14 @@
                     android:layout_marginTop="30dp"
                     android:layout_marginEnd="30dp"
                     android:layout_marginBottom="30dp"
-                    android:background="@drawable/background_register_btn"
+                    android:background="@color/cardview_dark_background"
                     android:clickable="true"
                     android:fitsSystemWindows="true"
                     android:focusable="true"
                     android:onClick="AddTips"
                     android:text="Post"
                     android:textAllCaps="false"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
                 <ProgressBar
