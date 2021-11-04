@@ -21,7 +21,7 @@
             android:src="@drawable/embryo"
             app:civ_border_color="@color/colorPrimary"
             app:civ_border_width="1dp"
-            app:civ_circle_background_color="@color/default_color" />
+            app:civ_circle_background_color="@color/white" />
 
         <RelativeLayout
             android:id="@+id/card_receiverss"
@@ -117,7 +117,7 @@
             android:src="@drawable/fetus"
             app:civ_border_color="@color/black"
             app:civ_border_width="1dp"
-            app:civ_circle_background_color="@color/grey_200" />
+            app:civ_circle_background_color="@color/white" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
