@@ -26,8 +26,8 @@
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.antenatalcareapp.ProfileFragment"
-        android:label="profile"
-        tools:layout="@layout/fragment_profile" />
+        android:name="com.example.antenatalcareapp.NewVisit"
+        android:label="New Visit"
+        tools:layout="@layout/fragment_new_visit" />
 
 </navigation>

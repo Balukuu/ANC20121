@@ -94,7 +94,7 @@
         <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_health_centers.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_health_tips.xml" value="0.17" />
         <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_login.xml" value="0.15" />
-        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_main2.xml" value="0.33" />
         <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_main3.xml" value="0.3222748815165877" />
         <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/activity_medical_personals.xml" value="0.22447916666666667" />
@@ -117,6 +117,7 @@
         <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/fragment_favourites.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/fragment_mother_chat.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/fragment_new_visit.xml" value="0.1" />
         <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/fragment_profile.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/fragment_search.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/edgar/Documents/Projects/AntenatalCareApp/app/src/main/res/layout/item_chat.xml" value="0.33" />

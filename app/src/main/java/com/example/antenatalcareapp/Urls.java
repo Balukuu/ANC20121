@@ -1,7 +1,7 @@
 package com.example.antenatalcareapp;
 
 public class Urls {
-    public static final String IP_URL = "http://192.168.43.232/anc/";
+    public static final String IP_URL = "http://192.168.0.189/anc/";
 //    public static final String IP_URL = "http://192.168.43.121:8080/2021projects/antenatalcareapp/";
     public Urls() {
     }
@@ -22,4 +22,5 @@ public class Urls {
     public static final String MEDICAL_PERSONALS = IP_URL+"medical_personel.php";
     public static final String DELETE_MOTHER = IP_URL+"delete_mother.php";
     public static final String LOAD_PROFILE = IP_URL+"my_profile.php";
+    public static final String New_Visit  = IP_URL+"new_visit.php";
 }

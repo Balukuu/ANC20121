@@ -8,7 +8,7 @@
     <item
         android:id="@+id/navigation_search"
         android:icon="@drawable/visits"
-        android:title="My Visits" />
+        android:title="Appointments" />
     <item
         android:id="@+id/navigation_favourites"
         android:icon="@drawable/bag"
@@ -16,6 +16,6 @@
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_baseline_supervisor_account_24"
-        android:title="Profile" />
+        android:title="My Visits" />
 
 </menu>
