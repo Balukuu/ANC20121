@@ -53,15 +53,15 @@
 
     <TextView
         android:id="@+id/names4"
-        android:layout_width="87dp"
-        android:layout_height="28dp"
+        android:layout_width="71dp"
+        android:layout_height="23dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:gravity="center_horizontal"
         android:text="Doctor"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="10sp"
         app:layout_constraintEnd_toStartOf="@+id/home_btn2"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="NotSibling" />

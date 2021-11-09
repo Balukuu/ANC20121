@@ -252,7 +252,7 @@
                 android:layout_marginRight="13dp"
                 android:padding="10dp"
                 android:text="date"
-                android:textColor="@color/red" />
+                android:textColor="@color/colorWhite" />
 
         </RelativeLayout>
 

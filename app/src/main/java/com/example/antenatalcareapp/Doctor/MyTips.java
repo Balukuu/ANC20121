@@ -110,7 +110,7 @@ public class MyTips extends AppCompatActivity {
     }
 
     public void goBack(View view) {
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        startActivity(new Intent(getApplicationContext(), AddHealthyTips.class));
         finish();
     }
 }

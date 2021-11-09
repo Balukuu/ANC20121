@@ -17,6 +17,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.antenatalcareapp.Adapters.TipsAdapter;
+import com.example.antenatalcareapp.Doctor.AddHealthyTips;
 import com.example.antenatalcareapp.Doctor.MyTips;
 import com.example.antenatalcareapp.MainActivity;
 import com.example.antenatalcareapp.Models.TipsModel;
@@ -109,7 +110,7 @@ public class HealthTips extends AppCompatActivity {
     }
 
     public void goBack(View view) {
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        startActivity(new Intent(getApplicationContext(), AddHealthyTips.class));
         finish();
     }
 }
