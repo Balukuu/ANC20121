@@ -2,7 +2,7 @@ package com.example.antenatalcareapp;
 
 public class Urls {
     //public static final String IP_URL = "https://ancbaluku.herokuapp.com/";
-  public static final String IP_URL = "http://10.10.50.177/anc/";
+  public static final String IP_URL = "http://172.16.0.23/anc/";
 //    public static final String IP_URL = "http://192.168.43.121:8080/2021projects/antenatalcareapp/";
     public Urls() {
     }

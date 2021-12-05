@@ -38,10 +38,11 @@ import java.util.Map;
 public class NewVisit extends Fragment {
 
     EditText u_phone, u_exam,u_diagnosis,u_treatment;
-    String phone, exam,diagnosis,treatment,getId;
+    String phone, exam,diagnosis,treatment,getId,clinician;
     SessionManager sessionManager;
     Button button;
     Urls urls;
+
 
 
     // TODO: Rename and change types and number of parameters
@@ -73,6 +74,8 @@ public class NewVisit extends Fragment {
         HashMap<String, String> user = sessionManager.getUserDetail();
         getId = user.get(SessionManager.ID);
         phone = user.get(SessionManager.CONTACT);
+        clinician =user.get(SessionManager.FULLNAME);
+
 
         u_phone = view.findViewById(R.id.textView4);
         u_exam = view.findViewById(R.id.textView5);
@@ -96,7 +99,7 @@ public class NewVisit extends Fragment {
             alertDialog2.setMessage("Make sure you double check entered info");
             alertDialog2.setIcon(R.drawable.ic_warning);
             alertDialog2.setPositiveButton("YES",
-                    (dialog, which) -> PostNewVisit(phone, exam, diagnosis,treatment));
+                    (dialog, which) -> PostNewVisit(phone, exam, diagnosis,treatment,clinician));
             alertDialog2.setNegativeButton("NO",
                     (dialog, which) -> dialog.cancel());
             alertDialog2.show();
@@ -111,7 +114,8 @@ public class NewVisit extends Fragment {
 
 
 
-    private void PostNewVisit(String phone, String exam, String diagnosis,String treatment) {
+    private void PostNewVisit(String phone, String exam, String diagnosis,String treatment,
+                              String clinician) {
         final ProgressDialog dialog = new ProgressDialog(getActivity());
         dialog.setMessage("Please wait...");
         dialog.show();
@@ -148,6 +152,7 @@ public class NewVisit extends Fragment {
                 params.put("exam", exam);
                 params.put("diagnosis", diagnosis);
                 params.put("treatment", treatment);
+                params.put("clinician", clinician);
 
                 return params;
 

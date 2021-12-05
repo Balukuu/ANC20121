@@ -88,6 +88,7 @@
             android:layout_height="match_parent"
             android:layout_below="@id/search_layout"
             android:layout_marginTop="1dp"
+            android:paddingBottom="80dp"
             tools:layout_editor_absoluteX="745dp"
             tools:layout_editor_absoluteY="-51dp" />
 

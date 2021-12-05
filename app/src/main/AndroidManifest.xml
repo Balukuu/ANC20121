@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS"/>
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AntenatalCareApp"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Doctor.AddNewVisit"
+            android:exported="false" />
         <activity
             android:name=".MainActivity3"
             android:exported="false" />
@@ -39,8 +42,7 @@
         <activity
             android:name=".Mother.MedicalPersonals"
             android:exported="false"
-            android:theme="@style/Theme.AntenatalCareApp"
-            />
+            android:theme="@style/Theme.AntenatalCareApp" />
         <activity
             android:name=".Mother.MyAppointments"
             android:exported="false"

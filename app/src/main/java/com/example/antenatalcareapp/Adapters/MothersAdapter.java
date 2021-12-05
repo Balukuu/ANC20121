@@ -26,9 +26,11 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.antenatalcareapp.Doctor.AddNewVisit;
 import com.example.antenatalcareapp.Doctor.CreateAppointments;
 import com.example.antenatalcareapp.Doctor.MothersList;
 import com.example.antenatalcareapp.Models.MothersModel;
+import com.example.antenatalcareapp.NewVisit;
 import com.example.antenatalcareapp.R;
 import com.example.antenatalcareapp.Urls;
 
@@ -113,15 +115,19 @@ public class MothersAdapter extends RecyclerView.Adapter<MothersAdapter.ViewHold
         holder.date.setText("Date added: " + mData.get(position).getDate_added());
 
 
-        holder.createappointment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        holder.createappointment.setOnClickListener(v -> {
 
-                Intent i=new Intent(context ,CreateAppointments.class);
-                i.putExtra("Mother_Name",Mother_Name);
-                i.putExtra("Phone_Number",Phone_Number);
-                context.startActivity(i);
-            }
+            Intent i=new Intent(context ,CreateAppointments.class);
+            i.putExtra("Mother_Name",Mother_Name);
+            i.putExtra("Phone_Number",Phone_Number);
+            context.startActivity(i);
+        });
+        holder.newvisit.setOnClickListener(v -> {
+
+            Intent i=new Intent(context , AddNewVisit.class);
+            i.putExtra("Mother_Name",Mother_Name);
+            i.putExtra("Phone_Number",Phone_Number);
+            context.startActivity(i);
         });
 
         holder.delete.setOnClickListener(v -> {
@@ -191,7 +197,7 @@ public class MothersAdapter extends RecyclerView.Adapter<MothersAdapter.ViewHold
 
         CardView items;
         TextView names, contact, age, nin, district, subcounty, parish, village, date;
-        Button delete,createappointment;
+        Button delete,createappointment, newvisit;
 
 
         public ViewHolder(@NonNull View itemView) {
@@ -208,6 +214,7 @@ public class MothersAdapter extends RecyclerView.Adapter<MothersAdapter.ViewHold
             parish = itemView.findViewById(R.id.parish);
             village = itemView.findViewById(R.id.village);
             createappointment=itemView.findViewById(R.id.date2);
+            newvisit = itemView.findViewById(R.id.date3);
         }
 
     }

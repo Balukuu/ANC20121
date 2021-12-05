@@ -30,11 +30,26 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="35dp"
                 android:layout_marginRight="0dp"
-                android:layout_marginBottom="10dp"
                 android:backgroundTint="@color/colorPrimary"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="Create appointment"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/date3"
+                android:layout_width="387dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date2"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Add New Visit"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
 
