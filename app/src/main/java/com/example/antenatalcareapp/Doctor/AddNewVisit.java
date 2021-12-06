@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,6 +17,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.antenatalcareapp.MainActivity;
 import com.example.antenatalcareapp.R;
 import com.example.antenatalcareapp.SessionManager;
 import com.example.antenatalcareapp.Urls;
@@ -27,12 +29,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class AddNewVisit extends AppCompatActivity {
-    EditText condition, u_exam,u_diagnosis,u_treatment;
-    String phone, exam,diagnosis,treatment,getId,clinician;
+    EditText condn, u_exam,u_diagnosis,u_treatment;
+    TextView  names, phone;
+    String  getId,clinician,contact,id;
     SessionManager sessionManager;
     Button button;
     Urls urls;
-    TextView tv_date, tv_time, names, contact;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,57 +45,61 @@ public class AddNewVisit extends AppCompatActivity {
 
         HashMap<String, String> user = sessionManager.getUserDetail();
         getId = user.get(SessionManager.ID);
-        phone = user.get(SessionManager.CONTACT);
+        contact = user.get(SessionManager.CONTACT);
+
         clinician =user.get(SessionManager.FULLNAME);
         names = findViewById(R.id.names);
-        contact = findViewById(R.id.phone);
+        phone = findViewById(R.id.phone);
 
-        condition = findViewById(R.id.textView4);
+        condn = findViewById(R.id.textView4);
         u_exam = findViewById(R.id.textView5);
         u_diagnosis = findViewById(R.id.textView6);
         u_treatment = findViewById(R.id.textView7);
-        button =findViewById(R.id.button2);
 
+
+        id = getIntent().getStringExtra("id");
         names.setText(getIntent().getStringExtra("Mother_Name"));
-        contact.setText(getIntent().getStringExtra("Phone_Number"));
+        phone.setText(getIntent().getStringExtra("Phone_Number"));
 
 
-        button.setOnClickListener(new View.OnClickListener() {
+        }
+    public void goBack(View view) {
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        finish();
+    }
 
-            public void onClick (View view) {
-                Toast.makeText(getApplicationContext(), "call", Toast.LENGTH_SHORT).show();
-                final String condn = condition.getText().toString();
-                final String exam = u_exam.getText().toString();
-                final String diagnosis = u_diagnosis.getText().toString();
-                final String treatment = u_treatment.getText().toString();
-                if (phone.isEmpty() || exam.isEmpty()) {
-                    Toast.makeText(getApplicationContext(), "all fields are required", Toast.LENGTH_SHORT).show();
-                } else {
-                    AlertDialog.Builder alertDialog2 = new AlertDialog.Builder(
-                            getApplicationContext());
-                    alertDialog2.setTitle("Confirm to Add New Visit");
-                    alertDialog2.setMessage("Make sure you double check entered info");
-                    alertDialog2.setIcon(R.drawable.ic_warning);
-                    alertDialog2.setPositiveButton("YES",
-                            (dialog, which) -> PostNewVisit(condn, exam, diagnosis,treatment,clinician));
-                    alertDialog2.setNegativeButton("NO",
-                            (dialog, which) -> dialog.cancel());
-                    alertDialog2.show();
+    public void NewVisited(View view) {
 
-                }
-            }
+        final String condition = condn.getText().toString();
+        final String exam = u_exam.getText().toString();
+        final String diagnosis = u_diagnosis.getText().toString();
+        final String treatment = u_treatment.getText().toString();
+        if (condition.isEmpty() || exam.isEmpty()) {
+            Toast.makeText(getApplicationContext(), "all fields are required", Toast.LENGTH_SHORT).show();
+        } else {
+            AlertDialog.Builder alertDialog2 = new AlertDialog.Builder(
+                    AddNewVisit.this);
+            alertDialog2.setTitle("Confirm to Add New Visit");
+            alertDialog2.setMessage("Make sure you double check entered info");
+            alertDialog2.setIcon(R.drawable.ic_warning);
+            alertDialog2.setPositiveButton("YES",
+                    (dialog, which) -> PostNewVisit(condition, exam, diagnosis,treatment,clinician,contact));
+            alertDialog2.setNegativeButton("NO",
+                    (dialog, which) -> dialog.cancel());
+            alertDialog2.show();
 
-        });
-
+        }
     }
 
 
-
     private void PostNewVisit(String condition, String exam, String diagnosis,String treatment,
-                              String clinician) {
-        final ProgressDialog dialog = new ProgressDialog(getApplicationContext());
+                              String clinician,String contact) {
+        final ProgressDialog dialog = new ProgressDialog(this);
         dialog.setMessage("Please wait...");
         dialog.show();
+        final String name = names.getText().toString();
+        final String phn = phone.getText().toString();
+
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, Urls.New_Visit,
                 response -> {
@@ -102,9 +109,9 @@ public class AddNewVisit extends AppCompatActivity {
                         String success = object.getString("success");
                         if (success.equals("1")) {
                             dialog.dismiss();
-                            Toast.makeText(getApplicationContext(), "Health Tips Added", Toast.LENGTH_LONG).show();
-//                            Intent list = new Intent(getApplicationContext(), MyTips.class);
-//                            startActivity(list);
+                            Toast.makeText(getApplicationContext(), "Visit Details Added", Toast.LENGTH_LONG).show();
+                      Intent list = new Intent(getApplicationContext(), MyTips.class);
+                       startActivity(list);
                         } else {
                             Toast.makeText(getApplicationContext(), "Error, please try3 again ", Toast.LENGTH_LONG).show();
                             dialog.dismiss();
@@ -123,9 +130,10 @@ public class AddNewVisit extends AppCompatActivity {
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<>();
                 params.put("condition", condition);
-                params.put("name", names.getText().toString());
+                params.put("name", name);
                 params.put("exam", exam);
-                params.put("phone", contact.getText().toString());
+                params.put("phone", phn);
+                params.put("contact", contact);
                 params.put("diagnosis", diagnosis);
                 params.put("treatment", treatment);
                 params.put("clinician", clinician);

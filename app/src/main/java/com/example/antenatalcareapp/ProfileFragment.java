@@ -1,14 +1,11 @@
 package com.example.antenatalcareapp;
 
-import android.Manifest;
+
 import android.app.ProgressDialog;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
+
 import android.os.Bundle;
 
 import androidx.appcompat.app.AlertDialog;
-import androidx.core.app.ActivityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
@@ -25,8 +22,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.antenatalcareapp.Mother.MyProfile;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import com.google.android.material.textfield.TextInputEditText;
 
 import org.json.JSONArray;
